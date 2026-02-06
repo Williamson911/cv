@@ -1,0 +1,195 @@
+/* =======================
+   BASE
+======================= */
+
+body {
+  margin: 0;
+  background-image: url("../images/CV.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h1, h2, p, a {
+  margin: 0;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* =======================
+   HEADER
+======================= */
+
+header {
+  text-align: center;
+  margin-top: 130px;
+  margin-bottom: 50px;
+}
+header h2 {
+    color: #e70c58;
+}
+
+.name-container {
+  display: inline-block;       /* Bordure autour du texte seulement */
+  padding: 20px 40px;          /* Espace intérieur confortable */
+  border: 2px solid black;     /* Bordure noire nette */
+  border-radius: 0;             /* Coins carrés */
+  text-align: center;          /* Texte centré */
+  margin-bottom: 30px;         /* Espace sous la bordure */
+}
+
+.name-container h1,
+.name-container h2 {
+  margin: 5px 0;               /* Espacement vertical entre nom et profession */
+}
+
+/* =======================
+   NAVIGATION
+======================= */
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.photo {
+  width: 10%;
+  border-radius: 50%;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 65px 0;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+
+nav a:hover {
+  color: #e70c58;
+}
+
+/* =======================
+   LAYOUT PRINCIPAL
+======================= */
+
+.container {
+  display: flex;
+  gap: 60px;          /* espace entre colonnes */
+  align-items: flex-start;
+}
+
+/* Colonnes */
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Colonne gauche */
+.column1 {
+  flex: 0 0 200px;   /* largeur fixe */
+  text-align: right;  /* texte aligné à droite */
+  padding-left: 15px;
+}
+
+.column1 ul {
+  text-align: left;   /* listes alignées à gauche */
+  padding-left: 20px; 
+}
+
+/* Colonne droite */
+.column2 {
+  flex: 3;
+  margin-left: 215px;           /* décale légèrement vers le centre */
+}
+
+/* =======================
+   SECTIONS
+======================= */
+
+section {
+  margin-bottom: 15px;  /* on gère l’espacement interne seulement */
+}
+
+section h1 {
+  color: #e70c58;
+}
+
+/* Espacement interne entre les éléments */
+section > * {
+  margin-bottom: 18px;
+}
+
+section > *:last-child {
+  margin-bottom: 0;
+}
+
+/* Formations et expériences */
+#formation h2,
+#expériences h2 {
+  margin-top: 25px;
+}
+
+#formation p,
+#expériences p {
+  margin-bottom: 20px;
+}
+
+/* Atouts */
+#Atouts p {
+  margin-bottom: 20px;
+}
+
+/* Listes */
+section ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+section li {
+  margin-bottom: 8px;
+}
+/* =======================
+   FOOTER
+======================= */
+footer {
+    text-align: center;
+}
+footer ul li {list-style-type: none;}
+
+/* =======================
+   MEDIA QUERIES (RESPONSIVE)
+======================= */
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .column1 {
+    flex: 1 1 100%;
+    text-align: left;
+  }
+
+  .column2 {
+    flex: 1 1 100%;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .name-container {
+    width: 90%;
+    padding: 15px 20px;
+  }
+}
