@@ -4,7 +4,7 @@
 
 body {
   margin: 0;
-  background-image: url("../images/CV.png");
+  background-image: url("images/CV.png");
   background-repeat: no-repeat;
   background-position: top center;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -193,3 +193,4 @@ footer ul li {list-style-type: none;}
     padding: 15px 20px;
   }
 }
+
